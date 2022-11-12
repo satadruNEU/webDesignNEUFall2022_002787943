@@ -1,2 +1,4 @@
 http://localhost:8000/user/create : POST
 http://localhost:8000/user/getAll: GET
+http://localhost:8000/user/edit: PUT
+http://localhost:8000/user/delete: DELTE

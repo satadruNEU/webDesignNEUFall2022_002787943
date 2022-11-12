@@ -1,4 +1,4 @@
-const { validateEmail, checkPassword } = require("./validation");
+const {validateEmail, checkPassword} = require("./validation");
 
 const express = require("express"),
       app = express(),
@@ -43,7 +43,6 @@ app.post("/user/create", async (req, res) => {
     } else {
 
       if (validateEmail(req.body.email)) {
-        // console.log("Proper email address");
         emailBool = true;
       } else {
         emailBool = false;
@@ -52,7 +51,6 @@ app.post("/user/create", async (req, res) => {
 
       if (checkPassword(req.body.password) && (req.body.password == req.body.confirm_password)) {
         passBool = true;
-        // console.log("Password is correct");
       } else {
         passBool = false;
         res.status(400).send({ message: "Please input password correctly!"});
@@ -77,7 +75,7 @@ app.post("/user/create", async (req, res) => {
 });
 
 // Update user details
-app.post("/user/edit", async (req, res) => {
+app.put("/user/edit", async (req, res) => {
 
   const user = await User.findOne({email: req.body.email});
   
@@ -88,9 +86,7 @@ app.post("/user/edit", async (req, res) => {
       if (req.body.new_email != undefined && req.body.new_password != undefined && req.body.confirm_new_password != undefined) {
         res.status(400).send({ message: "Please provide either new email or new password parameters only!" });
       } else if (req.body.new_email != undefined && req.body.new_password == undefined && req.body.confirm_new_password == undefined) {
-        // console.log("Update new email");
         if (validateEmail(req.body.new_email)) {
-          // console.log("Seems good");
           User.findByIdAndUpdate(user._id, { email: req.body.new_email }, { useFindAndModify: false })
             .then(data => {
               if (!data) {
@@ -110,7 +106,6 @@ app.post("/user/edit", async (req, res) => {
           res.status(400).send({ message: "Please enter the new email correctly!" });
         }
       } else if (req.body.new_email == undefined && req.body.new_password != undefined && req.body.confirm_new_password != undefined) {
-        // console.log("Update new password");
         if (checkPassword(req.body.new_password) && req.body.new_password == req.body.confirm_new_password) {
           const newPassword = await bcrypt.hash(req.body.new_password, saltRounds);
           User.findByIdAndUpdate(user._id, { password: newPassword }, { useFindAndModify: false })
@@ -153,6 +148,7 @@ app.get("/user/getAll", async (req, res) => {
         return {
           id: item._id,
           email: item.email,
+          username: item.username,
           password: item.password
         }
       })
