@@ -1,0 +1,2 @@
+http://localhost:8000/user/create : POST
+http://localhost:8000/user/getAll: GET
