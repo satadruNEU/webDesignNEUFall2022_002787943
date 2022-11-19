@@ -8,8 +8,8 @@ function Contact() {
       <Navbar />
       <Card
         title='Contact'
-        imageUrl='https://foyr.com/learn/wp-content/uploads/2021/08/design-your-dream-home.jpg'
-        body='This is the website Home page'
+        imageUrl='https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(14).webp'
+        body='You can contact us via email or phone.'
       />
     </div>
   )

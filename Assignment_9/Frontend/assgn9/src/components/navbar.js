@@ -5,7 +5,7 @@ import AboutUs from '../pages/Aboutus';
 import Contact from '../pages/Contact';
 import Jobs from '../pages/Jobs';
 import Login from '../pages/Login';
-// import './navbar.css';
+import './navbar.css';
 
 
 export default function Navbar(){

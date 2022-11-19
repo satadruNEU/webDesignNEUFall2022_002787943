@@ -1,20 +1,21 @@
 .card-container {
     width: 500px;
-    height: 400px;
+    height: 200px;
     overflow: hidden;
     box-shadow: 0px 0px 15px -5px;
-    transition: 0.5s;
+    transition: 0.4s;
     animation: ease-in-out;
     display: inline-flex;
 }
 
 .card-container:hover{
     transform: scale(1.1);
-    box-shadow: 0px 0px 15px 0px;
+    box-shadow: 0px 0px 8px 0px;
 }
 
 .image-container img{
     overflow: hidden;
+    max-width: 350px;
     height: 200px;
 }
 

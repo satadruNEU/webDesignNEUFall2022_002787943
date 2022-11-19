@@ -7,9 +7,9 @@ function Aboutus() {
     <div className='App'>
       <Navbar />
       <Card
-        title='Aboutus'
-        imageUrl='https://foyr.com/learn/wp-content/uploads/2021/08/design-your-dream-home.jpg'
-        body='This is the website Home page'
+        title='About Us'
+        imageUrl='https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(18).webp'
+        body='About us can be found here'
       />
     </div>
   )

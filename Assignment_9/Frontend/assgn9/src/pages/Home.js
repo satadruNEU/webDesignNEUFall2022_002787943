@@ -8,8 +8,8 @@ function Home() {
       <Navbar />
       <Card
         title='Home'
-        imageUrl='https://foyr.com/learn/wp-content/uploads/2021/08/design-your-dream-home.jpg'
-        body='This is the website Home page'
+        imageUrl='https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(10).webp'
+        body='Home Page content is here'
       />
     </div>
   )

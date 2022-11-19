@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: antiquewhite;
+    }
+    
+li {
+    list-style: none;
+    padding: 20px ;
+    }
+
+.nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 20px;
+        background-color: teal;
+        margin-left: -350px;
+    }
+

@@ -8,8 +8,8 @@ function Jobs() {
       <Navbar />
       <Card
         title='Jobs'
-        imageUrl='https://foyr.com/learn/wp-content/uploads/2021/08/design-your-dream-home.jpg'
-        body='This is the website Home page'
+        imageUrl='https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(22).webp'
+        body='No openings available. Recession time'
       />
     </div>
   )
