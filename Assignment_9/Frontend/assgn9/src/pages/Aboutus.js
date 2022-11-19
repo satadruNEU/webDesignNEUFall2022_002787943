@@ -9,7 +9,7 @@ function Aboutus() {
       <Card
         title='About Us'
         imageUrl='https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(18).webp'
-        body='About us can be found here'
+        body='About us can be found here about the company'
       />
     </div>
   )
