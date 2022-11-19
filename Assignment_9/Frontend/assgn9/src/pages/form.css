@@ -1,0 +1,22 @@
+form{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.login-box{
+    padding: 50px;
+}
+
+.btn{
+    width: 100px;
+    height: 30px;
+    background-color: teal;
+    color: antiquewhite;
+    border-radius: 10px;
+    border-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

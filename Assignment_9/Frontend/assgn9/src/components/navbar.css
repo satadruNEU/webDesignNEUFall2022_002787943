@@ -3,6 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+.btn1{
+    width: 100px;
+    height: 30px;
+    background-color: teal;
+    color: antiquewhite;
+    border-radius: 10px;
+    border-color: antiquewhite;
+    display: flex;
+    margin: 50px;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 800px; */
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
 
 a {
     text-decoration: none;

@@ -11,6 +11,7 @@ function Contact() {
         imageUrl='https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(14).webp'
         body='You can contact us via email or phone.'
       />
+    {/* <button className='btn1'>Logout</button> */}
     </div>
   )
 }

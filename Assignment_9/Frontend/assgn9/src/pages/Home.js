@@ -11,6 +11,7 @@ function Home() {
         imageUrl='https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(10).webp'
         body='Home Page content is here'
       />
+    {/* <button className='btn1'>Logout</button> */}
     </div>
   )
 }

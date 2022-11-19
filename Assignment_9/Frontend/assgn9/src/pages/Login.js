@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import './form.css'
+import './form.css'
 
 export default class Login extends Component {
   constructor(props) {
@@ -52,7 +52,7 @@ export default class Login extends Component {
             <h2>LOGIN</h2>
 
             <div className="Username">
-            <label>Username</label>
+            <label>Username: </label>
             <input
                 type="text"
                 className="form-control"
@@ -63,7 +63,7 @@ export default class Login extends Component {
             </div>
 
             <div className="Password">
-            <label>Password</label>
+            <label>Password: </label>
             <input
                 type="password"
                 className="form-control"

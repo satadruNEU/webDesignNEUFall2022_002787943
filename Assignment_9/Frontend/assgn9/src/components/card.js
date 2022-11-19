@@ -16,6 +16,7 @@ function Card({title,imageUrl,body}){
                 </div>
             </div>
         </div>
+       
     )
 }
 

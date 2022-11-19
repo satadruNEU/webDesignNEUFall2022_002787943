@@ -11,6 +11,7 @@ function Aboutus() {
         imageUrl='https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(18).webp'
         body='About us can be found here about the company'
       />
+    {/* <button className='btn1'>Logout</button> */}
     </div>
   )
 }
